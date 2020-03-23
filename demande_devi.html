@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <head>
+   <!--navbar-->
+        <div class="navbar">
+            <h1>navbar</h1>
+        </div>
+        <!--end navbar-->
+            <div class="partie_un" > 
+                <p>Demande de devis</p>
+            </div>
+    </head>
+
+    <section>
+       
+   
+<!--formulaire-->
+    <div class="container center_div">
+        
+        <form method="POST"   action="./cible.php" >
+          
+         
+     <div class="row">     
+    <div class="group">      
+         <input type="text" name="nom" id="nom" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Name</label>
+      </div>
+      
+      <div class="col-1"></div>
+
+      <div class="group">      
+          <input type="text" name="prenom" id="prenom" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Last name</label>
+      </div>
+      </div>  
+      
+<div class="row">
+    <div class="group">      
+        <input type="email" name="email" id="email" required>
+       <span class="highlight"></span>
+       <span class="bar"></span>
+       <label>E-mail</label>
+     </div>
+     
+     <div class="col-1"></div>
+
+     <div class="group">      
+         <input type="tel" name="telephone" id="telephone"required>
+       <span class="highlight"></span>
+       <span class="bar"></span>
+       <label>telephone</label>
+     </div>
+</div>
+
+
+<div class="row">
+    <div class="group">      
+        <input type="nom_entreprise" name="nom_entreprise" id="nom_entreprise" required>
+       <span class="highlight"></span>
+       <span class="bar"></span>
+       <label>Nom de votre entreprise</label>
+     </div>
+     
+     <div class="col-1"></div>
+
+     <div class="group">      
+         <input type="adress" name="adress" id="adress"required>
+       <span class="highlight"></span>
+       <span class="bar"></span>
+       <label>adress</label>
+     </div>
+</div>
+
+<div class="row" id="titre_textarea">
+Choisissez votre préstation
+</div>
+
+<div class="row">
+
+
+  <div class="polaroid">
+    <img src="img/designn.png" width="200" height="200">
+    <div class="prestation">
+      <p>Design Graphique</p>
+      </div>
+      <input type="checkbox"  value="design"  name="prestation">
+    </div>
+
+  <div class="polaroid">
+    <img src="img/dev.png" width="200" height="200">
+    <div class="prestation">
+      <p>Developpement Web</p>
+    </div>
+    <input type="checkbox"  value="dev" name="prestation">
+  </div>
+
+    <div class="polaroid">
+      <img src="img/vg.png" width="200" height="200">
+      <div class="prestation">
+        <p>Developpement</br>Jeux Vidéos</p>
+      </div>
+      <input type="checkbox"  value="jv" name="prestation">
+    </div>
+    
+    <div class="polaroid">
+      <img src="img/videoo.png" width="200" height="200">
+      <div class="prestation">
+        <p>Montage Vidéos</p>
+      </div>
+      <input type="checkbox"  value="montage" name="prestation">
+    </div>
+
+</div>
+
+
+  <div class="row" id="titre_textarea">
+    Enter your message 
+  </div>
+ 
+      <div class="row">            
+       <textarea name="msg"  id="msg" required ></textarea>
+
+       <div class="col-3" ></div>
+      <div class="col-4">
+        <button type="submit" name="send" class="btn confer-btn"> 
+           Send your message
+        </button>
+      </div>
+
+      </div>
+
+     
+      
+
+        </form>
+      </div>
+      <!--formulaire end-->
+    </section>
+    
+</body>
+</html>
